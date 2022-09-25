@@ -1,0 +1,22 @@
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: var(--secondary-light-color);
+}
+.brand {
+  color: var(--primary-light-color);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.brand h3 {
+  color: var(--heading-color);
+  margin-left: 30px;
+}

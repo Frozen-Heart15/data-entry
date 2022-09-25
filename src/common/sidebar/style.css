@@ -1,0 +1,30 @@
+.sidebar-out {
+  display: flex;
+}
+
+.main {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--heading-color);
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: var(--secondary-light-color);
+}
+
+.sidebar-link {
+  color: var(--primary-light-color);
+  text-decoration: none;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content:flex-start;
+  padding:10px 20px 10px 10px;
+}
+.sidebar-link:hover {
+ background-color: var(--primary-color);
+ color: var(--primary-light-color);
+}
+

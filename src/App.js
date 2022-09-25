@@ -1,24 +1,47 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Header } from 'common/header';
+import { Sidebar } from 'common/sidebar'
+import { Login } from 'pages/login';
+import { Dashboard } from 'pages/dashboard';
+import { FirmEntry } from 'pages/firmEntry';
+import { NoteEntry } from 'pages/noteEntry';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
+
+  const [
+    state,
+    setState,
+  ] = React.useState({
+    showMenu: true,
+  });
+
+  const toggleMenu = () => {
+    setState(prevState => ({
+      ...prevState,
+      showMenu: !prevState.showMenu,
+    }));
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  
+  <Router>
+    <Header  toggleMenu={toggleMenu}/>
+    <Sidebar showMenu={state.showMenu} >
+    <Routes>
+      <Route exact path="/login" element={<Login/>}/>
+      <Route exact path="/" element={<Dashboard/>} />
+      <Route exact path="/firm-entry" element={<FirmEntry/>} />
+      <Route exact path="/note-entry" element={<NoteEntry/>} />
+    </Routes>
+    </Sidebar>
+  </Router>
+
   );
 }
 

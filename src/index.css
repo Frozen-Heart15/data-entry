@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.dark-theme {
+  --primary-color: #473f5a;
+  --primary-light-color: #a38bd4;
+  --secondary-color: #100c18;
+  --secondary-light-color: #27262c;
+  --button-background-color: #21c6d4;
+}
+
+.light-theme {
+  --primary-color: #19122a;
+  --primary-light-color: #473f5a;
+  --secondary-color: #aaa;
+  --secondary-light-color: #fff;
+  --button-background-color: #21c6d4;
+}
