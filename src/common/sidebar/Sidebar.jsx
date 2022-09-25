@@ -33,14 +33,15 @@ export const Sidebar = (props) => {
       icon: <HiOfficeBuilding/>
     },
   ]
-
+console.log(window.location.href)
   return (
+    <>
     <div className='sidebar-out'>
-
+    { window.location.href !== 'http://localhost:3000/login' &&
     <div className='sidebar'>
       {
         menuItem.map((item,index) => (
-          <NavLink to={item.path} key={index} className='sidebar-link' activeClassName='sidebar-active'>
+          <NavLink to={item.path} key={index} className='sidebar-link' activeclassname='sidebar-active'>
             {item.icon}
             &nbsp;
             {
@@ -53,9 +54,11 @@ export const Sidebar = (props) => {
         ))
       }
     </div>
+    }
     <div className='main'>
       {props.children}
     </div>
     </div>
+</>
   )
 }
