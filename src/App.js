@@ -41,7 +41,6 @@ function App() {
     </Routes>
     </Sidebar>
   </Router>
-
   );
 }
 

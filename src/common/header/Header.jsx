@@ -16,7 +16,7 @@ export const Header = (props) => {
   ] = React.useState('dark-theme');
 
   const toggleTheme = () => {
-    console.log(theme)
+
     if (theme === 'dark-theme') {
       document.body.className = 'light-theme';
       setTheme('light-theme');
@@ -31,13 +31,13 @@ export const Header = (props) => {
       
       <div className='brand'>
         <FaBars  onClick={props.toggleMenu}/>
-        <h3> <DiDatabase/>DataEntry</h3>
+        <h3> <DiDatabase/>Krtak Software</h3>
       </div>
 
       <div className="dropdown">
       
         <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src={settings} width={'30px'}/>
+          <img src={settings} width={'30px'} alt="settings"/>
         </button>
         
         <ul className="dropdown-menu">

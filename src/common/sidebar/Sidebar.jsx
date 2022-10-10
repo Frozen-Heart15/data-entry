@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 import {
   FaTh,
-  FaBars,
 } from 'react-icons/fa';
 import {
   HiOfficeBuilding,
@@ -33,7 +32,7 @@ export const Sidebar = (props) => {
       icon: <HiOfficeBuilding/>
     },
   ]
-console.log(window.location.href)
+
   return (
     <>
     <div className='sidebar-out'>

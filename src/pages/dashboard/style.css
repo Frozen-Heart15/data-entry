@@ -1,0 +1,16 @@
+.dashboard-inner {
+ display: flex;
+}
+
+.my-card {
+  /* background: linear-gradient(to right, #45d0ef, );Created with https://www.css-gradient.com */
+  background: #D2A9F9;
+  background: -webkit-linear-gradient(top left, #D2A9F9, #D19DF2);
+  background: -moz-linear-gradient(top left, #D2A9F9, #D19DF2);
+  background: linear-gradient(to bottom right, #D2A9F9, #D19DF2);
+
+  padding:20px;
+  width: 250px;
+  border-radius: 15px;
+  margin: 10px;
+}
